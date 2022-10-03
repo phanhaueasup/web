@@ -7,86 +7,14 @@ let playlistPage=function(pathname){
     xuliTitle(`Photo collections – Page ${pageNumber} – stealimage.com`)
   }
 
-  //heroes
-  if(pathname=="/"){
-    $("#main").append(`
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" style="background-color:#f7f8f9; margin-bottom:25px;">
-        <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">We share high quality photos. fresh and beautiful girls to you</h1>
-          <p class="lead">We search, curate, and share the best collections with you. Feel free to use the site, please bookmark and share with your friends</p>
-        </div>
-    </div>
-    `)
-  }
+  // //heroes
+  // if(pathname=="/"){
+  //   $("#main").append(`
+  //
+  //   `)
+  // }
 
   //add page
-  $("#main").append(`
-    <div id="playlist-page-container" style="display:None">
-      <section class="section dashboard">
-       <div class="row">
-          <div class="col-lg-8" style="background:#f7f8f9">
-             <!--   playlist 1   -->
-             <div class="col-lg-12" style="background:#f7f8f9">
-                <div class="card" style="background:#f7f8f9">
-                   <div class="card-body" style="background:#f7f8f9">
-                      <div class="row" id="list-playlist" >
-
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-12">
-                <div class="card">
-                   <div class="card-body">
-                     <ul class="pagination flex-wrap" style="margin-top:38px" id="playlist-pagination">
-
-                     </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-4 right-bar">
-            <!--   welcome    -->
-            <div class="card">
-              <div class="card-body welcome solid-5px-top">
-                <h5 class="card-title">Welcome</h5>
-                <div class="welcome-card" id="welcome-card">
-                  <div class="textwidget"><p>All resources come from the Internet</p>
-                    <p>This is a quality collections, content is handpicked.</p>
-                    <p>We don't use annoy pop up ads.</p>
-                    <hr>
-                    <p>We are developing, please bookmark and visit to support.</p>
-                    <p>Buy Origin = visit vendor site.</p>
-                    <p>Thanks.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <!--   news    -->
-             <div class="card">
-               <div class="card-body news solid-5px-top">
-                 <h5 class="card-title">Recent updated</h5>
-
-                 <div class="activity" id="statistic">
-
-
-                 </div>
-
-               </div>
-             </div>
-             <!--   ads    -->
-             <div class="card">
-               <div class="card-body ads-card">
-
-               </div>
-             </div>
-
-          </div>
-       </div>
-    </section>
-  </div>
-`)
-
 
 
   let page=pathname;
