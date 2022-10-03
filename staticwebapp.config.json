@@ -3,6 +3,10 @@
        "rewrite": "index.html",
        "exclude": ["/assets/*"]
     },
+    "globalHeaders": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
+    },
     "mimeTypes": {
         ".json": "text/json"
     }
