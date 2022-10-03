@@ -91,11 +91,16 @@ let playlistPage=function(pathname){
   if(page=="/"){
     page="/page/1"
   }
+  let hashCode = function(s){
+    return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0)%10000+10000;
+  }
   $.get(host+page,(data,status)=>{
     data=JSON.parse(data);
     console.log(data)
     for(let i=0;i<data.length;i++){
-      let view_number=Math.floor(((data[i]["title"].length+data[i]["thumbnail"].length)*1000%10000)*Math.log10(Date.now()-Date.parse(data[i]["date_added"])))
+      let k=hashCode(data[i]["title"])
+
+      let view_number=Math.floor(k*Math.log10(Date.now()-Date.parse(data[i]["date_added"])))
       $("#list-playlist").append(`
         <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top:10px;">
           <div class="card hover-card">
