@@ -6,7 +6,7 @@ let playlistPage=function(pathname){
     let pageNumber=pathname.split('/')[pathname.split("/").length-1];
     xuliTitle(`Photo collections – Page ${pageNumber} – stealimage.com`)
   }
-
+  $("#playlist-page-container").show()
   // //heroes
   // if(pathname=="/"){
   //   $("#main").append(`
