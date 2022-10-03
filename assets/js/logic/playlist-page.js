@@ -118,7 +118,7 @@ let playlistPage=function(pathname){
                    <h5 class="card-title">${data[i]["title"]}</h5>
 
                    <!--<i class="bi bi-tags-fill"></i><br/>-->
-                   <i class="bi bi-eye-fill" style="color:black"> ${view_number} views </i>
+                   <i class="bi bi-eye-fill" style="color:black"> ${view_number} views </i> &#160; &#160;
                    <i class="bi bi-calendar-event" style="color:black"> ${data[i]["date_added"].split("T")[0]}</i>
                 </div>
              </a>
