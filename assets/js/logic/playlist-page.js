@@ -11,8 +11,8 @@ let playlistPage=function(pathname){
   if(pathname=="/"){
     $("#main").append(`
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" style="background-color:#f3f3f3">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">stealimage.com - share beautiful, high-quality photos.  sexy beauty - fresh and beautiful simple sexy beauty</h1>
+        <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1">We share high quality photos. fresh and beautiful girls to you</h1>
           <p class="lead">We search, curate, and share the best collections with you. Feel free to use the site, please bookmark and share with your friends</p>
         </div>
     </div>
