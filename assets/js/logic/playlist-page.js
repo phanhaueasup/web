@@ -110,7 +110,7 @@ let playlistPage=function(pathname){
 
       let view_number=Math.floor(k*Math.log10(Date.now()-Date.parse(data[i]["date_added"])))
       $("#list-playlist").append(`
-        <div class="col-lg-5 col-md-6 col-sm-6" style="margin-top:10px;">
+        <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top:10px;">
           <div class="card hover-card">
              <a href="/${data[i]["href"]}">
                 <img src="${data[i]["thumbnail"]}" class="card-img-top" alt="...">
