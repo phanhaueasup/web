@@ -95,7 +95,7 @@ let playlistPage=function(pathname){
     data=JSON.parse(data);
     console.log(data)
     for(let i=0;i<data.length;i++){
-      let view_number=Math.floor(((data[i]["title"].length+data[i]["imgs"].length)*1000%20000)*Math.log10(Date.now()-Date.parse(data[i]["date_added"])))
+      let view_number=Math.floor(((data[i]["title"].length+data[i]["imgs"].length)*1000%10000)*Math.log10(Date.now()-Date.parse(data[i]["date_added"])))
       $("#list-playlist").append(`
         <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top:10px;">
           <div class="card hover-card">
