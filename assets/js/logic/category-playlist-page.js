@@ -1,6 +1,7 @@
 let categoryPlaylistPage=function(pathname){
   //add page
   $("#main").append(`<section class="section dashboard">
+
      <div class="row">
         <div class="col-lg-12" style="background:#f3f3f3">
            <!--   playlist 1   -->

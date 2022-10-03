@@ -20,68 +20,71 @@ let playlistPage=function(pathname){
   }
 
   //add page
-  $("#main").append(`<section class="section dashboard">
-     <div class="row">
-        <div class="col-lg-8" style="background:#f7f8f9">
-           <!--   playlist 1   -->
-           <div class="col-lg-12" style="background:#f7f8f9">
-              <div class="card" style="background:#f7f8f9">
-                 <div class="card-body" style="background:#f7f8f9">
-                    <div class="row" id="list-playlist" >
+  $("#main").append(`
+    <div id="playlist-page-container" style="display:None">
+      <section class="section dashboard">
+       <div class="row">
+          <div class="col-lg-8" style="background:#f7f8f9">
+             <!--   playlist 1   -->
+             <div class="col-lg-12" style="background:#f7f8f9">
+                <div class="card" style="background:#f7f8f9">
+                   <div class="card-body" style="background:#f7f8f9">
+                      <div class="row" id="list-playlist" >
 
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <div class="col-lg-12">
-              <div class="card">
-                 <div class="card-body">
-                   <ul class="pagination flex-wrap" style="margin-top:38px" id="playlist-pagination">
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-lg-12">
+                <div class="card">
+                   <div class="card-body">
+                     <ul class="pagination flex-wrap" style="margin-top:38px" id="playlist-pagination">
 
-                   </ul>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <div class="col-lg-4 right-bar">
-          <!--   welcome    -->
-          <div class="card">
-            <div class="card-body welcome solid-5px-top">
-              <h5 class="card-title">Welcome</h5>
-              <div class="welcome-card" id="welcome-card">
-                <div class="textwidget"><p>All resources come from the Internet</p>
-                  <p>This is a quality collections, content is handpicked.</p>
-                  <p>We don't use annoy pop up ads.</p>
-                  <hr>
-                  <p>We are developing, please bookmark and visit to support.</p>
-                  <p>Buy Origin = visit vendor site.</p>
-                  <p>Thanks.</p>
+                     </ul>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-4 right-bar">
+            <!--   welcome    -->
+            <div class="card">
+              <div class="card-body welcome solid-5px-top">
+                <h5 class="card-title">Welcome</h5>
+                <div class="welcome-card" id="welcome-card">
+                  <div class="textwidget"><p>All resources come from the Internet</p>
+                    <p>This is a quality collections, content is handpicked.</p>
+                    <p>We don't use annoy pop up ads.</p>
+                    <hr>
+                    <p>We are developing, please bookmark and visit to support.</p>
+                    <p>Buy Origin = visit vendor site.</p>
+                    <p>Thanks.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-           <!--   news    -->
-           <div class="card">
-             <div class="card-body news solid-5px-top">
-               <h5 class="card-title">Recent updated</h5>
+             <!--   news    -->
+             <div class="card">
+               <div class="card-body news solid-5px-top">
+                 <h5 class="card-title">Recent updated</h5>
 
-               <div class="activity" id="statistic">
+                 <div class="activity" id="statistic">
 
+
+                 </div>
 
                </div>
-
              </div>
-           </div>
-           <!--   ads    -->
-           <div class="card">
-             <div class="card-body ads-card">
+             <!--   ads    -->
+             <div class="card">
+               <div class="card-body ads-card">
 
+               </div>
              </div>
-           </div>
 
-        </div>
-     </div>
-  </section>
+          </div>
+       </div>
+    </section>
+  </div>
 `)
 
 
