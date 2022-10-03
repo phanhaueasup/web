@@ -115,7 +115,9 @@ let playlistPage=function(pathname){
     console.log(data)
     for(let i=0;i<data.length;i++){
       let k=hashCode(data[i]["title"])
-
+      if(!data[i]["date_added"]){
+        data[i]["date_added"]="2022-10-02T19:02:28.446+00:00"
+      }
       let view_number=Math.floor(k*Math.log10(Date.now()-Date.parse(data[i]["date_added"])))
       $("#list-playlist").append(`
         <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top:10px;">
