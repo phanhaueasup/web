@@ -1,7 +1,11 @@
 let playlistPage=function(pathname){
 
   // title
-  xuliTitle(pathname);
+  if(pathname=="/") xuliTitle("stealimage.com - share beautiful, high-quality photos. The largest number of photos in the world.","Selection of the best photos, many genres and carefully updated online selection. censored, uncensored, beauty.");
+  if(pathname.includes("/page/")){
+    let pageNumber=pathname.split('/')[pathname.split("/").length-1];
+    xuliTitle(`photo collections – Page ${pageNumber} – stealimage.com`)
+  }
 
   //add page
   $("#main").append(`<section class="section dashboard">
