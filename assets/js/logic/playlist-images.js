@@ -143,7 +143,7 @@ let playlistImagesPage=function(pathname){
         `)
       }
       change_data_images(0)
-      reload_js("/assets/js/gallery.js")
+      // reload_js("/assets/js/gallery.js")
 
 
 
