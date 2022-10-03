@@ -74,8 +74,8 @@ let playlistPage=function(pathname){
            </div>
            <!--   ads    -->
            <div class="card">
-             <div class="card-body ads">
-               <img src="https://tpc.googlesyndication.com/simgad/13177358407532545586"/>
+             <div class="card-body ads-card">
+               for ads
 
              </div>
            </div>
