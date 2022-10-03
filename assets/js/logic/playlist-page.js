@@ -91,9 +91,16 @@ let playlistPage=function(pathname){
   if(page=="/"){
     page="/page/1"
   }
-  let hashCode = function(s){
-    return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0)%10000+10000;
-  }
+  function hashCode (str){
+    var hash = 0;
+    if (str.length == 0) return hash;
+    for (i = 0; i < str.length; i++) {
+        char = str.charCodeAt(i);
+        hash = ((hash<<5)-hash)+char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash%10000+10000;
+}
   $.get(host+page,(data,status)=>{
     data=JSON.parse(data);
     console.log(data)
