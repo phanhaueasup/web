@@ -92,6 +92,7 @@ let playlistPage=function(pathname){
     page="/page/1"
   }
   function hashCode (str){
+    while(str.length<50) str+=" ";
     var hash = 0;
     if (str.length == 0) return hash;
     for (i = 0; i < str.length; i++) {
