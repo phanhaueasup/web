@@ -98,8 +98,7 @@ let playlistImagesPage=function(pathname){
     $("#playlist-thumbnail").attr({"src":data["thumbnail"],"alt":data["title"]})
 
     //title
-    $("#playlist-title").append(`<h1>${data["title"]}</h1>`)
-    $("#current-link").append(data["href"])
+    $("#playlist-title").append(`<h1 style="font-size:14px">${data["title"]}</h1>`)
       //load data
      for(let i=0;i<data["imgs"].length;i++){
       $("#gallery-container").append(`
