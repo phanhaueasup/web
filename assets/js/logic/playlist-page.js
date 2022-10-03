@@ -1,5 +1,8 @@
 let playlistPage=function(pathname){
 
+  // title
+  xuliTitle(pathname);
+
   //add page
   $("#main").append(`<section class="section dashboard">
      <div class="row">

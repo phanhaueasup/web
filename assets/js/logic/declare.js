@@ -6,3 +6,7 @@ let change_data_images;
 
 //playlist-page
 let playlistPerPage=12;
+
+
+///
+let xuliTitle;
