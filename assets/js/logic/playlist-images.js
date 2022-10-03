@@ -11,7 +11,7 @@ let playlistImagesPage=function(pathname){
               <div class="card-body">
                 <div class="infoleft">
                   <ul>
-                    <li id="playlist-title"><strong>ID Code: </strong>MIDV-213</li>
+                    <li id="playlist-title"></li>
                     <li id="date-added"><strong>Release Date: </strong>2022-10-04</li>
                     <li id="tags"><strong><i class="bi bi-tags-fill"></i> </strong><a href="https://jav.guru/tag/big-tits/" rel="tag">Big tits</a>, <a href="https://jav.guru/tag/creampie/" rel="tag">Creampie</a>, <a href="https://jav.guru/tag/digital-mosaic/" rel="tag">Digital Mosaic</a>, <a href="https://jav.guru/tag/older-sister/" rel="tag">Older sister</a>, <a href="https://jav.guru/tag/slender/" rel="tag">Slender</a>, <a href="https://jav.guru/tag/slut/" rel="tag">Slut</a>, <a href="https://jav.guru/tag/solowork/" rel="tag">Solowork</a></li>
                     <li></li>
@@ -98,7 +98,7 @@ let playlistImagesPage=function(pathname){
     $("#playlist-thumbnail").attr({"src":data["thumbnail"],"alt":data["title"]})
 
     //title
-    $("#title-post").append(data["title"])
+    $("#playlist-title").append(`<h1>${data["title"]}</h1>`)
     $("#current-link").append(data["href"])
       //load data
      for(let i=0;i<data["imgs"].length;i++){
