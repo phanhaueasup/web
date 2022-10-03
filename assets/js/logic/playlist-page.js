@@ -105,7 +105,7 @@ let playlistPage=function(pathname){
                 <div class="card-body">
                    <h5 class="card-title">${data[i]["title"]}</h5>
                    <i class="bi bi-tags-fill"></i> <a href="" rel="tag">Big tits,</a> <a href="" rel="tag">Big tits,</a> <a href="" rel="tag">Big tits</a><br/>
-                   <i class="bi bi-eye-fill"></i> 1234 views <br/>
+                   <i class="bi bi-eye-fill"></i> ${view_number} views <br/>
                    <i class="bi bi-calendar-event"></i> 15/06/2022
                 </div>
              </a>
