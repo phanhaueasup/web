@@ -93,6 +93,7 @@ let playlistImagesPage=function(pathname){
   $.get(host+pathname,(data1,status)=>{
     data=JSON.parse(data1)
     console.log(data)
+    xuliTitle(data["title"],`${data["title"]} collection - stealimage.com`)
     // load thumbnail
     $("#playlist-thumbnail").attr({"src":data["thumbnail"],"alt":data["title"]})
 
