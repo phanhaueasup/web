@@ -116,7 +116,8 @@ let playlistPage=function(pathname){
                 <img src="${data[i]["thumbnail"]}" class="card-img-top" alt="...">
                 <div class="card-body">
                    <h5 class="card-title">${data[i]["title"]}</h5>
-                   <i class="bi bi-tags-fill"></i> <a href="" rel="tag">Big tits,</a> <a href="" rel="tag">Big tits,</a> <a href="" rel="tag">Big tits</a><br/>
+
+                   <i id="tags" class="bi bi-tags-fill"></i>  <a href="" rel="tag">Big tits,</a> <a href="" rel="tag">Big tits</a><br/>
                    <i class="bi bi-eye-fill"></i> ${view_number} views <br/>
                    <i class="bi bi-calendar-event"></i> ${data[i]["date_added"].split("T")[0]}
                 </div>
@@ -124,6 +125,15 @@ let playlistPage=function(pathname){
           </div>
        </div>
       `)
+
+      // add tags
+      for(let j=0;j<data[i]["tags"].length;j++){
+        if(data[i]["tags"][j].length<=12){
+          $("#tags").append(`<a href="">${data[i]["tags"][j]},</a>`);
+          if(j<data[i]["tags"].length-1) $("#tags").append(`,</a>`)
+          else $("#tags").append(`</a>`)
+        }
+      }
     }
   })
 
