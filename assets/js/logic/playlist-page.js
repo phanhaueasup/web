@@ -129,7 +129,7 @@ let playlistPage=function(pathname){
       // add tags
       for(let j=0;j<data[i]["tags"].length;j++){
         if(data[i]["tags"][j].length<=12){
-          $(".bi-tags-fill").eq(i).append(`<a href="">${data[i]["tags"][j]},</a>`);
+          $(".bi-tags-fill").eq(i).append(`<a href="" style="font-size:10px">${data[i]["tags"][j].toLowerCase()}`);
           if(j<data[i]["tags"].length-1) $("#tags").append(`,</a>`)
           else $("#tags").append(`</a>`)
         }
