@@ -37,14 +37,13 @@ let playlistPage=function(pathname){
             <div class="card-body welcome solid-5px-top">
               <h5 class="card-title">Welcome</h5>
               <div class="welcome-card" id="welcome-card">
-                <div class="textwidget"><p>All JAV movies are mobile-ready.</p>
-                  <p>This is a quality JAV tube, content is handpicked.</p>
-                  <p>Girl of the month: <a href="https://jav.guru/actress/tsubomi/" rel="tag">Tsubomi</a></p>
+                <div class="textwidget"><p>All resources come from the Internet</p>
+                  <p>This is a quality collections, content is handpicked.</p>
+                  <p>We don't use annoy pop up ads.</p>
                   <hr>
-                  <p>Requested reposts (via comment) will be prioritized. Thanks.</p>
-                  <p>Subs requests = not allowed.</p>
-                  <p><a href="https://jav.guru/category/fc2/">FC2</a> moved to <a href="https://jav.guru/category/amateur/">Amateur</a> section.</p>
-                  <p>• Buy Uncensored? =&nbsp;<a href="https://javhd.com/tour/104?nats=Mjc1MzAuMi4yLjIuMC4yNDMzOS4wLjAuMA" target="_blank" rel="noopener noreferrer">JAVHD.com</a></p>
+                  <p>We are developing, please bookmark and visit to support.</p>
+                  <p>Buy Origin = visit vendor site.</p>
+                  <p>Thanks.</p>
                 </div>
               </div>
             </div>
