@@ -1,5 +1,6 @@
 let playlistImagesPage=function(pathname){
   $("#playlist-images-container").show();
+  
   let data;
   let imagePerPagination=24;
   //change_pagination_images
