@@ -1,6 +1,6 @@
 let playlistImagesPage=function(pathname){
   $("#playlist-images-container").show();
-  
+
   let data;
   let imagePerPagination=24;
   //change_pagination_images
@@ -43,7 +43,7 @@ let playlistImagesPage=function(pathname){
       //load data
      for(let i=0;i<data["imgs"].length;i++){
       $("#gallery-container").append(`
-        <a class="col-lg-2 col-md-6 col-sm-12 gallery-item" style="padding:1px" href="${data["imgs"][i]}">
+        <a class="col-lg-3 col-md-6 col-sm-12 gallery-item" style="padding:1px" href="${data["imgs"][i]}">
           <img class="img-responsive lazy" width="100%" style="display:none;"src="${data["imgs"][i]}"/>
         </a>
       `)
